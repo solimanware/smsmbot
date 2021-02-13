@@ -48,7 +48,7 @@ const login = async (page) => {
     //TODO: make your own .env file
     await page.type("#email", process.env.FB_USERNAME)
     await page.type("#pass", process.env.FB_PASSWORD)
-    await page.click("#u_0_b")
+    await page.keyboard.press("Enter")
 }
 
 const post = async (page, msg, photo) => {
